@@ -1,0 +1,49 @@
+
+================================================================================
+v1.0.0 (18 August 2021)
+--------------------------------------------------------------------------------
+
+* Header files update
+* Unmask by default all bits in CRSM_IRQ_STATUS register that can indicate a
+  hardware error
+* Fixed an issue with PHY register accesses when both MDIO_GPIO and MDIO_CL22
+  symbols are defined
+
+================================================================================
+v0.4.0 (22 July 2021)
+--------------------------------------------------------------------------------
+
+* Added support for link quality reading using MSE
+* Added support for test modes
+* Added support for frame generator and frame checker
+* Added new API for reading device identification
+* Add example project FrameGenChkExample showing basic usage of the frame generator
+  and checker APIs
+
+================================================================================
+v0.3.0 (28 June 2021)
+--------------------------------------------------------------------------------
+
+* Added support for ADIN1100-U2 samples. Selection between ADIN1100-U1 and ADIN1100-U2.
+  target hardware is done via the symbol ADIN_S1, see the "ADIN1110 Device Driver
+  Users Guide" for more information.
+* Extend API for accessing second LED 1 in S2 configuration.
+* Fixed issues with enumeration adi_phy_Capabilities_e causing C++ compile errors.
+* Added MDIO Clause 22 support and indirect access to clause 45 register space.
+* Miscellaneous code and documentation improvements.
+
+================================================================================
+================================================================================
+v0.2.0 (14 December 2020)
+--------------------------------------------------------------------------------
+
+* Added static registers configuration to the initialization function
+* Added option to implement MDIO communication using GPIO bit-banging instead of
+  a SPI interface. This can be configured by defining the symbol MDIO_GPIO
+
+================================================================================
+v0.1.0 (17 July 2020)
+--------------------------------------------------------------------------------
+
+First release of the ADIN1100 device driver.
+
